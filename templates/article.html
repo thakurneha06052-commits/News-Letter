@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% block title %}{{ article.headline }}{% endblock %}
+
+{% block content %}
+<article class="article-page">
+  <div class="wrap">
+
+    <div class="article-header">
+      <span class="eyebrow">{{ article.category }}</span>
+      <h1>{{ article.headline }}</h1>
+      <div class="meta-line">{{ article.date.strftime('%d %B %Y') }}<span class="dot">&middot;</span>{{ article.source }}</div>
+    </div>
+
+    <div class="article-body">
+      <p style="font-size:1.12rem; color:var(--color-ink-soft);">{{ article.intro }}</p>
+
+      <h2>What Happened</h2>
+      <p>{{ article.what_happened }}</p>
+
+      <div class="key-facts">
+        <h2>Key Facts</h2>
+        <ul>
+          {% for fact in article.key_facts %}
+          <li>{{ fact }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <h2>Why It's Important</h2>
+      <p>{{ article.why_important }}</p>
+
+      <h2>Economic Impact</h2>
+      <p>{{ article.economic_impact }}</p>
+
+      <h2>What It Means For You</h2>
+      <p>{{ article.impact_on_people }}</p>
+
+      <div class="simple-box">
+        <span class="eyebrow">In Simple Terms</span>
+        <p>{{ article.simple_explanation }}</p>
+      </div>
+
+      {% if related_terms %}
+      <h2 style="border:none; margin-top:0.4em;">Terms to Know</h2>
+      <div class="related-terms">
+        {% for t in related_terms %}
+        <a href="{{ url_for('glossary') }}#term-{{ t.id }}">{{ t.term }}</a>
+        {% endfor %}
+      </div>
+      {% endif %}
+
+      {% if article.source_url %}
+      <div class="source-line">
+        Source: {{ article.source }} &middot;
+        <a href="{{ article.source_url }}" target="_blank" rel="noopener">view original report &rarr;</a>
+      </div>
+      {% endif %}
+    </div>
+
+    {% if more_articles %}
+    <div class="section-heading">
+      <h2>More in {{ article.category }}</h2>
+    </div>
+    <div class="grid">
+      {% for a in more_articles %}
+      <article class="card">
+        <span class="tag">{{ a.category }}</span>
+        <div class="meta-line">{{ a.date.strftime('%d %b %Y') }}</div>
+        <h3><a href="{{ url_for('article_detail', article_id=a.id) }}">{{ a.headline }}</a></h3>
+        <a class="read-link" href="{{ url_for('article_detail', article_id=a.id) }}">Read &rarr;</a>
+      </article>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+  </div>
+</article>
+{% endblock %}

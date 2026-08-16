@@ -1,0 +1,21 @@
+{
+  "id": 8,
+  "headline": "Kharif Sowing Recovers After a Rocky Start, but August Rainfall Still a Worry",
+  "date": "2026-08-01",
+  "category": "Agriculture",
+  "intro": "India's summer (kharif) crop planting season started badly this year due to weak early monsoon rains, but a wave of stronger rainfall in July helped farmers catch up significantly.",
+  "what_happened": "June 2026 was the driest June for India in 12 years, leaving kharif sowing running about 20% behind the previous year in early July. However, unusually active rainfall systems through July -- with 24 'low pressure system active' days against a norm of 14 -- brought a rainfall surplus for the month, narrowing the kharif sowing gap from over 20% in early July to under 3% by month-end. Even so, forecasters flagged concerns about below-normal rainfall in August 2026 as El Nino conditions strengthen.",
+  "key_facts": [
+    "June 2026 rainfall ran about 38-43% below normal, the driest June in 12 years.",
+    "The kharif sowing gap versus last year narrowed from roughly 20% in early July to about 3% by end of July.",
+    "Crops like soyabean, pulses, sesamum, and cotton saw the fastest catch-up in late plantings.",
+    "The India Meteorological Department (IMD) has forecast below-normal rainfall (under 94% of the long-period average) for August 2026.",
+    "India receives roughly 29% of its total southwest monsoon rainfall in August alone, making the month critical for the season."
+  ],
+  "why_important": "Agriculture still employs a large share of India's workforce and heavily influences rural incomes, food prices, and overall economic growth. The kharif season (roughly June to October) produces crops like rice, cotton, soyabean, and pulses, and depends almost entirely on monsoon rainfall for irrigation.",
+  "economic_impact": "A weak or delayed monsoon can reduce crop output, push up food prices (as already seen in July 2026's inflation data), and hurt rural demand for goods and services. A stronger-than-expected recovery, as seen in July, helps limit the damage but does not fully erase the risk if August and September rains disappoint.",
+  "impact_on_people": "Farmers' incomes for the year depend heavily on how this season plays out. For consumers, poor monsoon outcomes typically translate into higher prices for vegetables, pulses, and other food staples in the months that follow.",
+  "simple_explanation": "The kharif season refers to crops sown at the start of the monsoon (around June-July) and harvested in autumn. Because Indian farming still relies heavily on monsoon rain rather than irrigation alone, the amount and timing of rainfall directly affects how much food gets grown -- and therefore how much it costs.",
+  "source": "USDA Foreign Agricultural Service, Cropin, Blitz India Media",
+  "source_url": "https://www.fas.usda.gov/data/gain/2026/08/india-monsoon-recovery-fails-boost-sluggish-crop-planting"
+}

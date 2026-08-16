@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Glossary{% endblock %}
+
+{% block content %}
+<section class="wrap" style="padding-top:40px;">
+  <span class="eyebrow">Reference</span>
+  <h1>Economics Explained</h1>
+  <p style="color:var(--color-muted); max-width:600px;">
+    Plain-language definitions for the terms that come up most often in
+    this newsletter, each linked back to the stories that use them.
+  </p>
+
+  <dl class="glossary-list">
+    {% for t in terms %}
+    <div class="glossary-item" id="term-{{ t.id }}">
+      <dt>{{ t.term }}</dt>
+      <dd>{{ t.definition }}</dd>
+      {% if t.related_article_ids %}
+      <div class="related-terms">
+        {% for aid in t.related_article_ids %}
+        <a href="{{ url_for('article_detail', article_id=aid) }}">Story #{{ aid }} &rarr;</a>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </dl>
+</section>
+{% endblock %}

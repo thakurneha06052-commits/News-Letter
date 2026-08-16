@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}NEWS LETTER{% endblock %} &mdash; Economics, Explained</title>
+  <meta name="description" content="NEWS LETTER is an intelligent economics news analysis platform that turns dense financial reporting into plain-language briefings.">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="wrap">
+      <span><span class="live-dot"></span>Tracking the Indian &amp; global economy</span>
+      <span>Edition &middot; {{ edition_date.strftime('%d %b %Y') if edition_date else '' }}</span>
+    </div>
+  </div>
+
+  <header class="masthead">
+    <div class="wrap">
+      <h1 class="title"><a href="{{ url_for('home') }}">NEWS LETTER</a></h1>
+      <p class="tagline">An Intelligent Economics News Analysis Platform</p>
+    </div>
+  </header>
+
+  <nav class="nav">
+    <div class="wrap">
+      <a href="{{ url_for('home') }}" class="{{ 'active' if request.endpoint == 'home' }}">Front Page</a>
+      {% for cat in nav_categories %}
+        <a href="{{ url_for('category', category_name=cat) }}"
+           class="{{ 'active' if request.view_args and request.view_args.get('category_name') == cat }}">{{ cat }}</a>
+      {% endfor %}
+      <a href="{{ url_for('glossary') }}" class="{{ 'active' if request.endpoint == 'glossary' }}">Glossary</a>
+      <form action="{{ url_for('search') }}" method="get">
+        <input type="search" name="q" placeholder="Search articles&hellip;" value="{{ request.args.get('q','') }}">
+      </form>
+    </div>
+  </nav>
+
+  {% if stats %}
+  <div class="ticker" aria-label="Latest economic indicators">
+    <div class="ticker-track">
+      {% for item in stats + stats %}
+        <a class="ticker-item" href="{{ url_for('article_detail', article_id=item.article_id) }}">
+          <span class="tk-label">{{ item.label }}</span>
+          <span>{{ item.fact }}</span>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>NEWS LETTER &mdash; a final-year Economics project, Mumbai University.</span>
+      <span>Sources spot-checked, figures may be revised. Not investment advice.</span>
+    </div>
+  </footer>
+
+</body>
+</html>

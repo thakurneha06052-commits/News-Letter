@@ -1,0 +1,21 @@
+{
+  "id": 10,
+  "headline": "UPI Smashes Its Own Record, Processing 23.66 Billion Transactions in July 2026",
+  "date": "2026-08-02",
+  "category": "Digital Economy",
+  "intro": "India's homegrown digital payments system, UPI, just had its biggest month ever -- proof of how deeply cashless payments have become part of everyday life, from big cities to small towns.",
+  "what_happened": "Data released by the National Payments Corporation of India (NPCI) showed that UPI (Unified Payments Interface) processed 23.66 billion transactions worth about ₹29.88 lakh crore in July 2026, its highest-ever monthly volume. This beat the earlier record of 23.20 billion transactions set in May 2026, and marked a roughly 22% year-on-year jump in transaction volume.",
+  "key_facts": [
+    "UPI transactions, July 2026: 23.66 billion, worth ₹29.88 lakh crore (about $313 billion).",
+    "Year-on-year growth: around 22% in volume, about 19-20% in value.",
+    "Average daily transactions: around 763 million, worth roughly ₹96,383 crore per day.",
+    "UPI is now live in about ten countries, including the UAE, Singapore, France, and Nepal.",
+    "Industry executives attributed much of the growth to deepening adoption in Tier-2, Tier-3, and rural areas."
+  ],
+  "why_important": "UPI has become the backbone of India's digital payments ecosystem, enabling instant, low-cost transfers between bank accounts using just a mobile phone. Its rapid growth reflects a broader shift in how Indians -- across income levels and geographies -- pay for everyday goods and services.",
+  "economic_impact": "Widespread digital payments improve financial inclusion by bringing more people into the formal banking system, reduce the economy's dependence on cash, and make it easier for small merchants and businesses to accept payments and build a transaction history that can support access to credit.",
+  "impact_on_people": "For students and everyday consumers, UPI has made it possible to pay for almost anything -- from street food to tuition fees -- instantly and without carrying cash. For small shopkeepers and vendors, it has lowered the cost and hassle of accepting digital payments.",
+  "simple_explanation": "UPI lets you send money directly from your bank account to someone else's, instantly, using just a mobile app and an ID like a phone number or UPI ID -- without needing to know their bank account details. It has made India one of the largest real-time digital payments markets in the world.",
+  "source": "IBEF, The Hans India, StartupTalky",
+  "source_url": "https://www.ibef.org/news/upi-records-highest-ever-monthly-transaction-volume-in-july"
+}

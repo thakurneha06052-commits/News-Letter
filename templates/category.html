@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}{{ category_name }}{% endblock %}
+
+{% block content %}
+<section class="wrap" style="padding-top:40px;">
+  <span class="eyebrow">Section</span>
+  <h1 style="margin-bottom:6px;">{{ category_name }}</h1>
+  <p style="color:var(--color-muted); margin-bottom:0;">{{ articles|length }} stor{{ 'y' if articles|length == 1 else 'ies' }}</p>
+
+  <div class="section-heading">
+    <h2>All Stories</h2>
+  </div>
+
+  {% if articles %}
+  <div class="grid">
+    {% for a in articles %}
+    <article class="card">
+      <div class="meta-line">{{ a.date.strftime('%d %b %Y') }}</div>
+      <h3><a href="{{ url_for('article_detail', article_id=a.id) }}">{{ a.headline }}</a></h3>
+      <p>{{ a.intro[:130] }}{% if a.intro|length > 130 %}&hellip;{% endif %}</p>
+      <a class="read-link" href="{{ url_for('article_detail', article_id=a.id) }}">Read &rarr;</a>
+    </article>
+    {% endfor %}
+  </div>
+  {% else %}
+  <div class="empty-state"><p>No stories in this section yet.</p></div>
+  {% endif %}
+</section>
+{% endblock %}

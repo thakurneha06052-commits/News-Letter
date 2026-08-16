@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block title %}Front Page{% endblock %}
+
+{% block content %}
+<section class="hero">
+  <div class="wrap hero-grid">
+
+    {% if featured %}
+    <article class="hero-feature">
+      <span class="eyebrow">{{ featured.category }}</span>
+      <h1><a href="{{ url_for('article_detail', article_id=featured.id) }}">{{ featured.headline }}</a></h1>
+      <div class="meta-line">{{ featured.date.strftime('%d %B %Y') }}</div>
+      <p class="intro">{{ featured.intro }}</p>
+      <a class="read-link" href="{{ url_for('article_detail', article_id=featured.id) }}">Read the full briefing &rarr;</a>
+    </article>
+    {% else %}
+    <div class="empty-state">
+      <p>No articles yet. Run <code>python seed_data.py</code> to load the news data.</p>
+    </div>
+    {% endif %}
+
+    <aside class="side-panel">
+      <span class="eyebrow">Why this matters</span>
+      <h3>Economics, in plain English</h3>
+      <p style="font-size:0.9rem; color:var(--color-ink-soft);">
+        Every story here is broken down the same way: what happened, why it
+        matters, and what it means for you &mdash; a student, a jobseeker,
+        a saver. No jargon left unexplained.
+      </p>
+      <ul>
+        <li><a class="term-link" href="{{ url_for('glossary') }}">Browse the full glossary &rarr;</a></li>
+        {% for cat in nav_categories[:6] %}
+        <li><a class="term-link" href="{{ url_for('category', category_name=cat) }}">{{ cat }}</a></li>
+        {% endfor %}
+      </ul>
+    </aside>
+
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="section-heading">
+    <h2>Latest Briefings</h2>
+    <span class="count">{{ latest|length }} more stor{{ 'y' if latest|length == 1 else 'ies' }}</span>
+  </div>
+
+  <div class="grid">
+    {% for a in latest %}
+    <article class="card">
+      <span class="tag">{{ a.category }}</span>
+      <div class="meta-line">{{ a.date.strftime('%d %b %Y') }}</div>
+      <h3><a href="{{ url_for('article_detail', article_id=a.id) }}">{{ a.headline }}</a></h3>
+      <p>{{ a.intro[:130] }}{% if a.intro|length > 130 %}&hellip;{% endif %}</p>
+      <a class="read-link" href="{{ url_for('article_detail', article_id=a.id) }}">Read &rarr;</a>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

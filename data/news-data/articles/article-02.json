@@ -1,0 +1,21 @@
+{
+  "id": 2,
+  "headline": "India's Retail Inflation Climbs to a 19-Month High of 4.45% in July 2026",
+  "date": "2026-08-12",
+  "category": "Inflation",
+  "intro": "Prices of everyday goods in India rose faster in July 2026 than they had in over a year and a half, mainly because food became more expensive.",
+  "what_happened": "Government data released on August 12, 2026 showed that India's Consumer Price Index (CPI) inflation rose to 4.45% in July, up from 4.38% in June. This was the highest reading in 19 months. The increase was driven mainly by food prices, which rose 5.52% year-on-year, up from 5.32% in June.",
+  "key_facts": [
+    "Overall CPI inflation: 4.45% in July 2026, versus 4.38% in June 2026.",
+    "Food inflation rose to 5.52% in July, from 5.32% in June.",
+    "Rural inflation (4.84%) ran higher than urban inflation (3.96%).",
+    "Housing inflation stayed comparatively low at about 2.2%.",
+    "Southern states, including Telangana and Andhra Pradesh, recorded the highest state-level inflation."
+  ],
+  "why_important": "Inflation measures how much costlier everyday life has become. It is the main indicator the RBI watches when deciding whether to raise or lower interest rates. A rise above the RBI's 4% target -- even while staying inside its 2-6% tolerance band -- signals that price pressures, particularly from food and energy, are building.",
+  "economic_impact": "Higher food inflation squeezes household budgets, especially for lower-income families who spend a larger share of their income on food. It also raises the chance that the RBI could turn more cautious on interest rates in future meetings if the trend continues.",
+  "impact_on_people": "Grocery bills, restaurant costs, and personal care items become more expensive. For students living on a fixed monthly allowance or part-time income, this means the same money buys slightly less than it did a few months ago.",
+  "simple_explanation": "Inflation is simply the rate at which prices rise over time. If your favourite snack cost ₹10 last year and costs ₹10.45 now, that roughly captures a 4.45% inflation effect. A small amount of inflation each year is considered normal and even healthy for an economy, but sharp jumps that outpace people's income growth become a burden.",
+  "source": "Forbes India, Trading Economics, PIB (Ministry of Statistics and Programme Implementation)",
+  "source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2298247"
+}

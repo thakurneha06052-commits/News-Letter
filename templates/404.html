@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Not Found{% endblock %}
+
+{% block content %}
+<section class="wrap" style="padding: 80px 0; text-align:center;">
+  <span class="eyebrow">404</span>
+  <h1>This story doesn't exist</h1>
+  <p style="color:var(--color-muted);">The article or page you're looking for may have been moved.</p>
+  <a class="read-link" href="{{ url_for('home') }}">&larr; Back to the front page</a>
+</section>
+{% endblock %}

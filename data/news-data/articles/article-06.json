@@ -1,0 +1,21 @@
+{
+  "id": 6,
+  "headline": "India's Unemployment Rate Edges Up to 5.5% as Youth Joblessness Rises",
+  "date": "2026-07-20",
+  "category": "Employment",
+  "intro": "Monthly labour market data shows India's unemployment rate has been drifting upward through the first half of 2026, with young people facing a particularly tough job market.",
+  "what_happened": "According to the monthly Periodic Labour Force Survey (PLFS) bulletin from the National Statistical Office (NSO), India's Current Weekly Status unemployment rate for persons aged 15 and above stood at 5.5% in June 2026, unchanged from May but up from 5.0% in January 2026. Youth unemployment (ages 15-29) rose to 16.2% in June 2026, up from 13.8% in April 2025.",
+  "key_facts": [
+    "Overall unemployment rate (CWS basis): 5.5% in June 2026.",
+    "Youth unemployment rate (15-29 years): 16.2% in June 2026, up from 13.8% a year earlier.",
+    "Female youth unemployment (about 20.7%) is notably higher than male youth unemployment (about 14.6%).",
+    "The Labour Force Participation Rate (LFPR) fell to 54.4% in June 2026, from 55% in April.",
+    "The annual Usual Status unemployment rate (a longer-term measure) was reported separately at around 3.2% for 2024-25."
+  ],
+  "why_important": "The unemployment rate shows what share of people who want to work are unable to find a job. Rising youth unemployment is a particular concern for India, which has one of the youngest populations in the world -- a large section of graduates entering the workforce each year.",
+  "economic_impact": "Persistently high youth unemployment can mean underused talent and lost economic potential (sometimes called a wasted 'demographic dividend'). Analysts point to a skills mismatch -- many graduates may lack the specific, industry-ready skills needed in fast-growing sectors such as artificial intelligence, advanced manufacturing, and renewable energy.",
+  "impact_on_people": "For students and recent graduates, a tighter job market can mean a longer and more competitive job search. It also puts pressure on the government and educational institutions to focus more on skill-building and industry-relevant training.",
+  "simple_explanation": "The unemployment rate is the percentage of people actively looking for work who cannot find a job, out of the total labour force (people working or looking for work). It does not count people who have stopped looking for work altogether.",
+  "source": "India Macro Indicators, PIB (Periodic Labour Force Survey Bulletin)",
+  "source_url": "https://indiamacroindicators.co.in/resources/blogs/india-unemployment-rate-in-2026"
+}

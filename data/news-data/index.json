@@ -1,0 +1,17 @@
+{
+  "project": "NEWS LETTER",
+  "period_covered": "July 1, 2026 - August 16, 2026",
+  "articles": [
+    { "id": 1,  "file": "articles/article-01.json", "headline": "RBI Holds Repo Rate Steady at 5.25% in August 2026 Policy", "category": "Banking & Finance", "date": "2026-08-05" },
+    { "id": 2,  "file": "articles/article-02.json", "headline": "India's Retail Inflation Climbs to a 19-Month High of 4.45% in July 2026", "category": "Inflation", "date": "2026-08-12" },
+    { "id": 3,  "file": "articles/article-03.json", "headline": "India's Economy Set for Strong Q1 FY27 Growth, but Estimates Vary Widely", "category": "Indian Economy", "date": "2026-08-11" },
+    { "id": 4,  "file": "articles/article-04.json", "headline": "Rupee Hits All-Time Low as Oil Prices and War in West Asia Weigh on the Currency", "category": "Rupee & Forex", "date": "2026-06-15" },
+    { "id": 5,  "file": "articles/article-05.json", "headline": "India's Merchandise Exports Hit Record July High, but Trade Deficit Widens Sharply", "category": "Trade & Business", "date": "2026-08-13" },
+    { "id": 6,  "file": "articles/article-06.json", "headline": "India's Unemployment Rate Edges Up to 5.5% as Youth Joblessness Rises", "category": "Employment", "date": "2026-07-20" },
+    { "id": 7,  "file": "articles/article-07.json", "headline": "GST Collections Surge 15.4% to ₹2.11 Lakh Crore in July 2026", "category": "Government Policy", "date": "2026-08-01" },
+    { "id": 8,  "file": "articles/article-08.json", "headline": "Kharif Sowing Recovers After a Rocky Start, but August Rainfall Still a Worry", "category": "Agriculture", "date": "2026-08-01" },
+    { "id": 9,  "file": "articles/article-09.json", "headline": "How the West Asia Conflict and Oil Price Swings Are Testing India's Economy", "category": "Global Economy", "date": "2026-08-12" },
+    { "id": 10, "file": "articles/article-10.json", "headline": "UPI Smashes Its Own Record, Processing 23.66 Billion Transactions in July 2026", "category": "Digital Economy", "date": "2026-08-02" },
+    { "id": 11, "file": "articles/article-11.json", "headline": "Sensex and Bank Nifty Rise as Cooling Oil Prices Lift Market Mood", "category": "Markets", "date": "2026-08-06" }
+  ]
+}

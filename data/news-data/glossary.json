@@ -1,0 +1,52 @@
+[
+  {
+    "term": "Inflation",
+    "definition": "A general increase in prices over time, meaning each rupee buys a little less than before.",
+    "related_article_ids": [2, 4]
+  },
+  {
+    "term": "Repo Rate",
+    "definition": "The interest rate at which the RBI lends money to commercial banks; it influences the interest rates banks charge on loans across the economy.",
+    "related_article_ids": [1]
+  },
+  {
+    "term": "GDP (Gross Domestic Product)",
+    "definition": "The total value of all goods and services produced within a country over a given period, used as the broadest measure of economic activity.",
+    "related_article_ids": [3]
+  },
+  {
+    "term": "Fiscal Deficit",
+    "definition": "The gap between the government's total expenditure and its total revenue, excluding money raised through borrowing.",
+    "related_article_ids": [7]
+  },
+  {
+    "term": "Current Account Deficit (CAD)",
+    "definition": "The gap that arises when a country spends more foreign currency (on imports, etc.) than it earns (from exports, etc.) over a period.",
+    "related_article_ids": [4, 5, 9]
+  },
+  {
+    "term": "Trade Deficit",
+    "definition": "The situation where a country's imports (goods bought from abroad) are worth more than its exports (goods sold abroad) in a given period.",
+    "related_article_ids": [5]
+  },
+  {
+    "term": "GST (Goods and Services Tax)",
+    "definition": "A single indirect tax applied to the sale of most goods and services in India, replacing several older separate taxes.",
+    "related_article_ids": [7]
+  },
+  {
+    "term": "Kharif Season",
+    "definition": "India's summer cropping season, roughly June to October, when crops like rice, cotton, and pulses are sown at the start of the monsoon and harvested in autumn.",
+    "related_article_ids": [8]
+  },
+  {
+    "term": "UPI (Unified Payments Interface)",
+    "definition": "A digital payments system that allows instant money transfers directly between bank accounts using a mobile phone, without sharing bank account details.",
+    "related_article_ids": [10]
+  },
+  {
+    "term": "Unemployment Rate",
+    "definition": "The percentage of people in the labour force (working or actively looking for work) who do not currently have a job.",
+    "related_article_ids": [6]
+  }
+]

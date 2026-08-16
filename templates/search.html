@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Search{% endblock %}
+
+{% block content %}
+<section class="wrap" style="padding-top:40px;">
+  <span class="eyebrow">Search</span>
+  <h1>{% if query %}Results for &ldquo;{{ query }}&rdquo;{% else %}Search NEWS LETTER{% endif %}</h1>
+
+  {% if query and not results %}
+  <div class="empty-state"><p>No stories matched &ldquo;{{ query }}&rdquo;. Try a different term.</p></div>
+  {% elif results %}
+  <div class="section-heading"><h2>{{ results|length }} result{{ 's' if results|length != 1 }}</h2></div>
+  <div class="grid">
+    {% for a in results %}
+    <article class="card">
+      <span class="tag">{{ a.category }}</span>
+      <div class="meta-line">{{ a.date.strftime('%d %b %Y') }}</div>
+      <h3><a href="{{ url_for('article_detail', article_id=a.id) }}">{{ a.headline }}</a></h3>
+      <a class="read-link" href="{{ url_for('article_detail', article_id=a.id) }}">Read &rarr;</a>
+    </article>
+    {% endfor %}
+  </div>
+  {% else %}
+  <p style="color:var(--color-muted);">Type a keyword above &mdash; try &ldquo;inflation&rdquo; or &ldquo;rupee&rdquo;.</p>
+  {% endif %}
+</section>
+{% endblock %}
